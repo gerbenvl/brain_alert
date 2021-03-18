@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "329968738690",
+    "firebase_url": "https://ai-alerts.firebaseio.com",
+    "project_id": "ai-alerts",
+    "storage_bucket": "ai-alerts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329968738690:android:2908abf9072e61148a6f9b",
+        "android_client_info": {
+          "package_name": "io.gerben.aimonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329968738690-sc4i6cecl78q0tstgrc94arqkq1b90in.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.gerben.aimonitor",
+            "certificate_hash": "c02381dd819826ce82dd65c9cad770ebeb8cd2bb"
+          }
+        },
+        {
+          "client_id": "329968738690-ui7cbfhrtc9s3eprckr4ctb3jto0dl9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpFXIKDj2AswfYhX-ndd7-YAYIliZ97hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329968738690-ui7cbfhrtc9s3eprckr4ctb3jto0dl9t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "329968738690-d2d4pio97ui5l2j7727idln8ahve7evu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.gerben.aimonitor"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329968738690:android:5d838ee04afa02ba8a6f9b",
+        "android_client_info": {
+          "package_name": "io.gerben.brain_alert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329968738690-gklnj2ml9dr95vcrhqaumd1unarjti96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.gerben.brain_alert",
+            "certificate_hash": "a437e78a55be0a456b555d41bac92b2262d573ea"
+          }
+        },
+        {
+          "client_id": "329968738690-ui7cbfhrtc9s3eprckr4ctb3jto0dl9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpFXIKDj2AswfYhX-ndd7-YAYIliZ97hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329968738690-ui7cbfhrtc9s3eprckr4ctb3jto0dl9t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "329968738690-d2d4pio97ui5l2j7727idln8ahve7evu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.gerben.aimonitor"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
