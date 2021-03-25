@@ -26,7 +26,7 @@ class BrainAlertState extends State<BrainAlert> {
 
   void subscribeToTopic() {
     FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
-    firebaseMessaging.subscribeToTopic("Test").then((val) {
+    firebaseMessaging.subscribeToTopic("All").then((val) {
       setState(() {
         _homeMessageText =
             "Waiting for messages. You can close the application now, notifications will popup.\r\n";
