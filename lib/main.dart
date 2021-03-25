@@ -3,12 +3,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class PushMessaging extends StatefulWidget {
+class BrainAlert extends StatefulWidget {
   @override
-  _PushMessagingState createState() => _PushMessagingState();
+  BrainAlertState createState() => BrainAlertState();
 }
 
-class _PushMessagingState extends State<PushMessaging> {
+class BrainAlertState extends State<BrainAlert> {
   String _homeMessageText = "Loading...";
 
   void initializeFlutterFire() async {
@@ -83,7 +83,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MaterialApp(
-      home: PushMessaging(),
+      home: BrainAlert(),
     ),
   );
 }
