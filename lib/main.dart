@@ -63,7 +63,7 @@ class BrainAlertState extends State<BrainAlert> {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Brainiacs Alerts'),
+          title: const Text('Brainiacs Alert'),
         ),
         body: Material(
           child: Column(
