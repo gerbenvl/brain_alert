@@ -33,7 +33,6 @@ class BrainAlertState extends State<BrainAlert> {
       setState(() {
         String tokenText = "Push Messaging token: " + token;
         _bottomMessageText = tokenText;
-        print(tokenText);
       });
     });
   }
@@ -77,7 +76,7 @@ class BrainAlertState extends State<BrainAlert> {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Brainiacs Alert 2.1'),
+          title: const Text('Brainiacs Alert 2.1.1'),
         ),
         body: Material(
           child: Column(
@@ -89,7 +88,7 @@ class BrainAlertState extends State<BrainAlert> {
               ]),
               Spacer(),
               Center(
-                child: Text(_bottomMessageText),
+                child: SelectableText(_bottomMessageText),
               ),
             ],
           ),
