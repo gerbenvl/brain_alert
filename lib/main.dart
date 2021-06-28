@@ -10,11 +10,13 @@ class BrainAlert extends StatefulWidget {
 
 class BrainAlertState extends State<BrainAlert> {
   String _homeMessageText = "Loading...";
+  String _bottomMessageText = "";
 
   void initializeFlutterFire() async {
     try {
       // Wait for Firebase to initialize
       await Firebase.initializeApp();
+      getToken();
       subscribeToTopic();
       registerMessageHandlers();
     } catch (e) {
@@ -22,6 +24,18 @@ class BrainAlertState extends State<BrainAlert> {
         _homeMessageText = "Error initializing firebase";
       });
     }
+  }
+
+  void getToken() {
+    FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
+    firebaseMessaging.getToken().then((String token) {
+      assert(token != null);
+      setState(() {
+        String tokenText = "Push Messaging token: " + token;
+        _bottomMessageText = tokenText;
+        print(tokenText);
+      });
+    });
   }
 
   void subscribeToTopic() {
@@ -63,7 +77,7 @@ class BrainAlertState extends State<BrainAlert> {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Brainiacs Alert'),
+          title: const Text('Brainiacs Alert 2.1'),
         ),
         body: Material(
           child: Column(
@@ -73,6 +87,10 @@ class BrainAlertState extends State<BrainAlert> {
                   child: Text(_homeMessageText, style: _biggerFont),
                 ),
               ]),
+              Spacer(),
+              Center(
+                child: Text(_bottomMessageText),
+              ),
             ],
           ),
         ));
